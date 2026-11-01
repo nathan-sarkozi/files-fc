@@ -1,0 +1,1 @@
+"""Interface Qt d’Atelier."""

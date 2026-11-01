@@ -1,0 +1,95 @@
+# Environnements Python locaux
+.venv/
+.venv-*/
+/venv/
+/env/
+/ENV/
+.direnv/
+
+# Python compilé et caches des outils
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+.dmypy.json
+dmypy.json
+
+# Couverture et rapports générés (les configurations restent versionnables)
+.coverage
+.coverage.*
+coverage.xml
+coverage.json
+htmlcov/
+/coverage/
+/reports/
+/test-results/
+
+# Packaging reproductible : setuptools, wheels et archives Linux
+/build/
+/dist/
+/wheelhouse/
+*.egg-info/
+.eggs/
+/pip-wheel-metadata/
+
+# Captures de contrôle et sauvegardes locales, après examen de leur contenu
+# Conserver les exemples PDF/images ; les captures du README sont dans docs/images/.
+/artifacts/*
+!/artifacts/samples/
+
+# Journaux, temporaires et fichiers de travail des moteurs Atelier
+*.log
+/logs/
+/tmp/
+/temp/
+.atelier-*/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Métadonnées de bureau et éventuels dumps natifs (sans masquer src/atelier/core/)
+.DS_Store
+.directory
+.Trash-*/
+/core.[0-9]*
+
+# VS Code : conserver launch.json, settings.json, tasks.json et extensions.json
+/.vscode/*.local.json
+*.local.code-workspace
+/.history/
+
+# Environnement privé ; seuls les modèles et le fichier de test vérifié sont partagés
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!/.env.test
+.envrc.local
+
+# Secrets et configurations privées : noms explicites, sans exclure les formats de documents
+/secrets/
+/.secrets/
+/secrets.*
+!/secrets.example.*
+/credentials/
+/credentials.*
+!/credentials.example.*
+/.aws/
+/.ssh/
+/.gnupg/
+/.config/
+/.codex/auth.json
+/.codex/*.local.toml
+/config.local.*
+/settings.local.*
+id_rsa
+id_ed25519
+*.private.key
+*.private.pem
